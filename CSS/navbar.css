@@ -1,0 +1,35 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: 'Quattrocento', serif;
+}
+
+.homenavbar {
+    overflow: hidden;
+    background-color: #FFF;
+    height: 75px;
+    padding-right: 200px;
+}
+
+.homenavbar a {
+    text-decoration: none;
+    float: right;
+    font-family: "Playfair Display", serif;
+    list-style-type: none;
+    text-underline: none;
+    text-align: center;
+    padding: 24px 16px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4c4c4c;
+}
+
+.homenavbar a:hover {
+    color: #800020;
+}
+
+.homenavbar a.active {
+    color: #800020;
+}
+

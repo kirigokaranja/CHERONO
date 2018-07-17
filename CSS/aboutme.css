@@ -1,0 +1,129 @@
+.col-xs-12 {
+    width: 80%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: 10%;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.ls.ms .with_background {
+    background-color: #fff;
+}
+.with_shadow {
+    box-shadow: 2px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.side-item .row {
+    margin: 0;
+}
+.vertical-center-md {
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-box-align: stretch;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: stretch;
+}
+.side-item.backgrounded-media .col-md-4 {
+    width: 35%;
+}
+.side-item .row [class*="col-"] {
+    margin: 0;
+    padding: 0;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: left;
+}
+.media_cover {
+    background-size: cover;
+}
+.bg_overlay, .media_cover {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.media_cover > img {
+    visibility: hidden;
+}
+img, figure {
+    height: auto;
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.side-item.backgrounded-media .item-media {
+    overflow: visible;
+}
+.backgrounded-media .item-media {
+    padding: 45px;
+}
+.backgrounded-media .item-media {
+    padding: 30px;
+}
+.backgrounded-media .item-media {
+    padding: 20px;
+}
+.highlight4{
+    color: #d02954;
+    font-size: 45px;
+    margin-bottom: -2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    word-wrap: break-word;
+}
+.dotted_divider{
+    margin-right: 50px;
+    margin-bottom: 20px;
+    border: dotted ;
+    background-size: 10px 10px;
+    height: 4px;
+    background-color: transparent;
+}
+.grey{
+    color: #232323;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 5px;
+    font-family: "Muli", sans-serif;
+    line-height: 27px;
+}
+p {
+    margin-bottom: 15px;
+    color: #787878;
+    font-family: "Muli", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+.text{
+    color: #d02954;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
+    line-height: 1;
+}
+.small-text {
+    font-family: "Muli", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
