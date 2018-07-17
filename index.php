@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Makeup &#8211; Just another WordPress site</title>
-    <link rel='stylesheet' id='makeup-bootstrap-css'  href='http://webdesign-finder.com/makeup/wp-content/themes/makeup/css/bootstrap.min.css?ver=1.0.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='makeup-animations-css'  href='http://webdesign-finder.com/makeup/wp-content/themes/makeup/css/animations.css?ver=1.0.2' type='text/css' media='all' />
-    <link rel='stylesheet' id='makeup-main-css'  href='http://webdesign-finder.com/makeup/wp-content/themes/makeup/css/main.css?ver=1.0.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='makeup-bootstrap-css'  href='CSS/bootstrap.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='makeup-animations-css'  href='CSS/animation.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='makeup-main-css'  href='CSS/main.css' type='text/css' media='all' />
     <link rel="stylesheet" href="CSS/navbar.css" type="text/css">
 
     <!-- Start WOWSlider.com HEAD section -->
