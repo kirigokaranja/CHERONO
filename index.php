@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Makeup &#8211; Just another WordPress site</title>
+    <title>Stephane | Home</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
     <link rel='stylesheet' id='makeup-bootstrap-css'  href='CSS/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='makeup-animations-css'  href='CSS/animation.css' type='text/css' media='all' />
     <link rel='stylesheet' id='makeup-main-css'  href='CSS/main.css' type='text/css' media='all' />
@@ -19,9 +20,11 @@
 <body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-6 masthead-fixed full-width grid">
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
-    <a href="" style="text-decoration:none">News</a>
-    <a href="" style="text-decoration:none">Contact</a>
-    <a href="" style="text-decoration:none">About</a>
+    <a href="login.php"><button class="loginBtn">Login</button></a>
+    <a href="" style="text-decoration:none">contact</a>
+    <a href="#services" style="text-decoration:none">services</a>
+    <a href="#works" style="text-decoration:none">works</a>
+    <a href="#about_me" style="text-decoration:none">about me</a>
     <a class="active" href="index.php" style="text-decoration:none">Home</a>
 </nav>
 
@@ -53,7 +56,7 @@
 
                         <!--echo $icon_options['custom_classes'];-->
 
-                        <div class="col-xs-12 to_animate text-left" data-animation="fadeInUp" style="margin-top: 1%">
+                        <div class="col-xs-12 to_animate text-left" id="about_me" data-animation="fadeInUp" style="margin-top: 1%">
                             <div class="side-item content-padding big-padding with_background with_shadow backgrounded-media bordered-media">
                                 <div class="row vertical-center-md">
                                     <div
@@ -87,7 +90,7 @@
                     </div>
                 </div>
             </section>
-            <section class="fw-main-row  ls ms section_padding_top_30 section_padding_bottom_30 columns_padding_15" >
+            <section class="fw-main-row   ls ms section_padding_top_30 section_padding_bottom_30 columns_padding_15" id="services" >
                 <div class="container">
                     <div class="row">
 
@@ -171,7 +174,7 @@
                     </div>
                 </div>
             </section>
-            <section class="fw-main-row  ls ms section_padding_top_40 section_padding_bottom_40 columns_padding_15" >
+            <section class="fw-main-row  ls ms section_padding_top_40 section_padding_bottom_40 columns_padding_15" id="works" >
                 <div class="container">
                     <div class="row">
 

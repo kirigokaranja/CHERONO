@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Eye makeup &#8211; Makeup</title>
-
+    <title>Stephane | Services</title>
+    <link rel="icon" type="image/ico" href="favicon.ico" />
     <link rel='stylesheet' id='makeup-bootstrap-css'  href='CSS/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='makeup-animations-css'  href='CSS/animation.css' type='text/css' media='all' />
     <link rel='stylesheet' id='makeup-main-css'  href='CSS/main.css' type='text/css' media='all' />
