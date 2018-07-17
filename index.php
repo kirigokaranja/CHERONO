@@ -61,7 +61,7 @@
                         </p><hr class="dotted_divider" />
                         <p>Fully qualified as both a hair and makeup technician, I now have an extensive portfolio of projects comprising of everything from bridal hair and fashion
                             shoots to catwalk models and media stars and have recently been recognised as the latest creative talent by independent fashion and lifestyle magazine.</p>
-                        <p class="text">Marie Parsons</p>
+                        <p class="text">Stephane </p>
                         <p class="small-text grey">makeup artist</p>
                     </div>
                 </div><!-- eof text .col-* -->
