@@ -21,7 +21,7 @@
 					</span>
             </div>
 
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" action="book.php">
                 <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
                     <span class="label-input100">Email</span>
                     <input class="input100" type="email" name="username" placeholder="Enter EmailAddress">
@@ -34,8 +34,8 @@
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="container-login100-form-btn" style="margin-left: 20%">
-                    <button class="login100-form-btn">
+                <div class="container-login100-form-btn" style="margin-left: 20%" >
+                    <button class="login100-form-btn" onclick="window.location.href= 'book.php' ">
                         Login
                     </button>
 

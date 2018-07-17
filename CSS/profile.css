@@ -1,0 +1,89 @@
+
+
+.profbody{
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -3%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(115, 7, 16, 0.2);
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+}
+.avatar, .info {
+    width: 100%;
+    height: 50%;
+}
+
+.avatar {
+    background: url("../IMAGES/marcus-lewis-612001-unsplash.jpg") no-repeat top center/cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+
+.info {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.info h1 {
+    padding: 12px 12px 0;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (min-width: 470px) {
+    .profile {
+        display: flex;
+    }
+
+    .background {
+        mix-blend-mode: overlay;
+    }
+
+    .avatar, .info {
+        width: 50%;
+        height: 100%;
+    }
+
+    .avatar {
+        -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+    }
+
+}
+@media only screen and (min-width: 470px) and (min-height: 600px) {
+    .profile {
+        max-height: 400px;
+    }
+}
+
