@@ -59,7 +59,7 @@
                                     <div
                                             class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                                         <div class="media_cover">
-                                            <img src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/side_bg_1.jpg" alt="">
+                                            <img src="IMAGES/side_bg_1.jpg" alt="">
                                         </div>
                                         <div class="item-media">
                                             <img src="IMAGES/marcus-lewis-612001-unsplash.jpg"
@@ -103,14 +103,14 @@
                                         <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color2_border">
 
                                             <div class="item-media">
-                                                <img width="775" height="517" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-775x517.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-775x517.jpg 775w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-1170x780.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
+                                                <img width="775" height="517" src="IMAGES/style2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="IMAGES/style2.jpg 775w, IMAGES/style2.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
                                             <div class="bg_teaser after_cover main_bg_color2">
                                                 <div class="item-content">
                                                     <h3 class="text-uppercase bottommargin_0">
-                                                        Face Makeup            </h3>
+                                                        Eye <br>makeup            </h3>
                                                     <hr class="icon-divider topmargin_15 bottommargin_10">
                                                     <div class="content-4lines-ellipsis">
-                                                        <p>We provide exquisite service with some of the most talented and experienced artists in the industry.</p>
+                                                        <p>Whether you’re attending a red carpet event or hosting a TV show, my makeup services will ensure you look flawless.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -125,7 +125,7 @@
                                         <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color2_border">
 
                                             <div class="item-media">
-                                                <img width="775" height="517" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-775x517.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-775x517.jpg 775w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-1170x780.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
+                                                <img width="775" height="517" src="IMAGES/style1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="IMAGES/style1.jpg 775w, IMAGES/style1.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
                                             <div class="bg_teaser after_cover main_bg_color2">
                                                 <div class="item-content">
                                                     <h3 class="text-uppercase bottommargin_0">
@@ -147,7 +147,7 @@
                                         <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color3_border">
 
                                             <div class="item-media">
-                                                <img width="775" height="517" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-775x517.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-775x517.jpg 775w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-1170x780.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
+                                                <img width="775" height="517" src="IMAGES/style3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="IMAGES/style3.jpg 775w, IMAGES/style3.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
                                             <div class="bg_teaser after_cover main_bg_color3">
                                                 <div class="item-content">
                                                     <h3 class="text-uppercase bottommargin_0">
