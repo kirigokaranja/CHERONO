@@ -115,7 +115,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight2links">
-                                                <a href="#">more info</a>
+                                                <a href="services.php">more info</a>
                                             </footer>
 
                                         </div><!-- eof .teaser -->
@@ -137,7 +137,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight2links">
-                                                <a href="#">more info</a>
+                                                <a href="services.php">more info</a>
                                             </footer>
 
                                         </div><!-- eof .teaser -->
@@ -159,7 +159,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight3links">
-                                                <a href="#">more info</a>
+                                                <a href="services.php">more info</a>
                                             </footer>
 
                                         </div><!-- eof .teaser -->
