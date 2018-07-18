@@ -1,0 +1,26 @@
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+
+}
+
+.tablink {
+    background-color: #fff;
+    color: #777;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 24px 16px;
+    font-size: 17px;
+    width: 20%;
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: -13px;
+    border-radius: 4px;
+}
+.tablink:hover {
+    background-color: #800020;
+}

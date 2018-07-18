@@ -75,12 +75,13 @@
                                             <h2 class="section_header big highlight4">
                                                 About Me					                                    </h2>
                                             <hr class="dotted_divider" /><p class="grey regular fontsize_24">
-                                                <em>I have been a passionate makeup artist based in London for over 10 years</em></p>
+                                                <em>I have been a passionate makeup artist based in Kenya.
+                                                    I have two years experience as a freelance makeup artist and been with MAC Cosmetics for almost an year.</em></p>
                                             <hr class="dotted_divider" />
-                                            <p>With a degree in art and an ability to connect with each individual client, I feel privileged to work within such a broad and creative industry.</p>
-                                            <p>Fully qualified as both a hair and makeup technician, I now have an extensive portfolio of projects comprising of everything from bridal hair and fashion
-                                                shoots to catwalk models and media stars and have recently been recognised as the latest creative talent by independent fashion and lifestyle magazine.</p>
-                                            <h4 class="big regular highlight bottommargin_0 topmargin_20">Stephane</h4><p class="small-text grey">makeup artist</p>								</div>
+                                            <p>With an ability to connect with each individual client, I feel privileged to work within such a broad and creative industry.</p>
+                                            <p>Fully qualified as a makeup technician, I now have an extensive portfolio of projects comprising of everything from fashion
+                                                shoots to catwalk models and media stars.</p>
+                                            <h4 class="big regular highlight bottommargin_0 topmargin_20">Stephanie</h4><p class="small-text grey">makeup artist</p>								</div>
                                     </div><!-- eof text .col-* -->
                                 </div><!-- eof .row -->
                             </div><!-- eof .side-item -->
@@ -99,30 +100,7 @@
 
                         <div class="col-xs-12 to_animate" data-animation="fadeInUp">
                             <div class="columns_padding_15">
-                                <div class="isotope_container isotope row masonry-layout"
-                                >
-                                    <div
-                                            class="isotope-item col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-                                        <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color2_border">
-
-                                            <div class="item-media">
-                                                <img width="775" height="517" src="IMAGES/style2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="IMAGES/style2.jpg 775w, IMAGES/style2.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
-                                            <div class="bg_teaser after_cover main_bg_color2">
-                                                <div class="item-content">
-                                                    <h3 class="text-uppercase bottommargin_0">
-                                                        Eye <br>makeup            </h3>
-                                                    <hr class="icon-divider topmargin_15 bottommargin_10">
-                                                    <div class="content-4lines-ellipsis">
-                                                        <p>Whether you’re attending a red carpet event or hosting a TV show, my makeup services will ensure you look flawless.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <footer class="small-text highlight2links">
-                                                <a href="services.php">more info</a>
-                                            </footer>
-
-                                        </div><!-- eof .teaser -->
-                                    </div>
+                                <div class="isotope_container isotope row masonry-layout">
                                     <div
                                             class="isotope-item col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                                         <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color2_border">
@@ -132,7 +110,7 @@
                                             <div class="bg_teaser after_cover main_bg_color2">
                                                 <div class="item-content">
                                                     <h3 class="text-uppercase bottommargin_0">
-                                                        Face Makeup            </h3>
+                                                        Natural Look          </h3>
                                                     <hr class="icon-divider topmargin_15 bottommargin_10">
                                                     <div class="content-4lines-ellipsis">
                                                         <p>We provide exquisite service with some of the most talented and experienced artists in the industry.</p>
@@ -154,7 +132,7 @@
                                             <div class="bg_teaser after_cover main_bg_color3">
                                                 <div class="item-content">
                                                     <h3 class="text-uppercase bottommargin_0">
-                                                        Hair Makeup            </h3>
+                                                        Foundation Routine            </h3>
                                                     <hr class="icon-divider topmargin_15 bottommargin_10">
                                                     <div class="content-4lines-ellipsis">
                                                         <p>My team and I compliment the face using stunning hairdressing techniques, from up-do’s to fishtails.</p>
@@ -167,12 +145,32 @@
 
                                         </div><!-- eof .teaser -->
                                     </div>
-                                </div><!-- eof .isotope_container -->
-                            </div><!-- eof .columns_padding_* -->    </div>
+                                    <div
+                                            class="isotope-item col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                                        <div class="vertical-item content-padding big-padding with_background with_shadow text-center bottom_color4_border">
 
+                                            <div class="item-media">
+                                                <img width="775" height="517" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-775x517.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-775x517.jpg 775w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-1170x780.jpg 1170w" sizes="(max-width: 775px) 100vw, 775px" />        </div>
+                                            <div class="bg_teaser after_cover main_bg_color4">
+                                                <div class="item-content">
+                                                    <h3 class="text-uppercase bottommargin_0">
+                                                        Eye <br>Makeup           </h3>
+                                                    <hr class="icon-divider topmargin_15 bottommargin_10">
+                                                    <div class="content-4lines-ellipsis">
+                                                        <p>Whether you’re attending a red carpet event or hosting a TV show, my makeup services will ensure you look flawless.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <footer class="small-text highlight4links">
+                                                <a href="http://webdesign-finder.com/makeup/?fw-services=eye-makeup">more info</a>
+                                            </footer>
 
-                    </div>
-                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
             </section>
             <section class="fw-main-row  ls ms section_padding_top_40 section_padding_bottom_40 columns_padding_15" id="works" >
                 <div class="container">
@@ -184,7 +182,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
                             <ul class="price-table with_background with_shadow">
                                 <li class="plan-name">
-                                    <h3 class="highlight4">Character Package</h3>
+                                    <h3 class="highlight4">PhotoShoot Package</h3>
                                 </li>
                                 <li class="features-list">
                                     <ul class="bold grey">
@@ -240,7 +238,7 @@
                         <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
                             <ul class="price-table with_background with_shadow">
                                 <li class="plan-name">
-                                    <h3 class="highlight2">Beauty Package</h3>
+                                    <h3 class="highlight2">Graduation Package</h3>
                                 </li>
                                 <li class="features-list">
                                     <ul class="bold grey">
@@ -296,7 +294,7 @@
                         <div class="col-md-4 col-sm-6 col-xs-12 col-sm-push-3 col-md-push-0 to_animate" data-animation="fadeInUp">
                             <ul class="price-table with_background with_shadow">
                                 <li class="plan-name">
-                                    <h3 class="highlight3">Wedding Package</h3>
+                                    <h3 class="highlight3">Bridal Package</h3>
                                 </li>
                                 <li class="features-list">
                                     <ul class="bold grey">
@@ -344,6 +342,56 @@
                             </ul>
                         </div>
 
+                        <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
+                            <ul class="price-table with_background with_shadow">
+                                <li class="plan-name">
+                                    <h3 class="highlight4">TV Package</h3>
+                                </li>
+                                <li class="features-list">
+                                    <ul class="bold grey">
+                                        <li class="default">
+                                            Basic Special Effects			</li>
+                                        <li class="default">
+                                            Zombie			</li>
+                                        <li class="default">
+                                            Injury Simulation			</li>
+                                        <li class="default">
+                                            Fantasy			</li>
+                                        <li class="default">
+                                            Theatre			</li>
+                                    </ul>
+                                </li>
+                                <li class="call-to-action">
+
+                                    <div class="theme_bg">
+                                        <div class="vertical-item hover-content bg_teaser with_border">
+                                            <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/still-life_3.png" alt="">
+                                            <div class="item-content">
+                                                <p class="plan-price highlight4">
+                                                    <span>$</span>
+                                                    <span>150</span>
+                                                </p>
+                                                <div class="content-body">
+                                                    <p class="small-text grey">most popular</p>
+                                                    <a href="#" target="_self"
+                                                       class="theme_button color4 ">
+                                                        <span>book now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg_overlay color_bg_4"></div>
+
+                                    <div class="media_cover">
+                                        <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/texture_1.png" alt="">
+                                    </div>
+
+                                    <div class="top_shadow"></div>
+                                </li>
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
