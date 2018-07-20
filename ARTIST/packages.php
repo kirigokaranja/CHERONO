@@ -32,14 +32,27 @@
         <button class="tablink" onclick="openPage('Home')" style="margin-left: 3%">View Packages</button>
     </div>
 </div>
+<?php
+//get the url
+$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
 
+//checking string position
+if(strpos($url,'message=error')){
+    echo "<div class=\"alert alert-danger\" style='width: 25%;margin-left: 35%;margin-top: 5%'> An Error Occurred.</div>";
+}else if (strpos($url,'message=addpackage')) {
+    echo "<div class=\"alert alert-success\" style='width: 25%;margin-left: 35%;margin-top: 5%'><strong>Success!</strong> Package added Successfully.</div>";
+}else if (strpos($url,'message=editpackage')) {
+    echo "<div class=\"alert alert-success\" style='width: 25%;margin-left: 35%;margin-top: 5%'><strong>Success!</strong> Package edited Successfully.</div>";
+}
+
+?>
 <div id="News" class="tabcontent">
     <section>
         <div class="container1" >
             <div class="picture-holder"></div>
             <div class="story-holder">
                 <h1 class="formh1">Package</h1><br><br><br>
-                <form method="post" action="">
+                <form method="post" action="ACTIONS/addPackage.php" >
                     <label>
                         <span>Package Name</span><br>
                         <input type="text" name="name" required/>
@@ -81,40 +94,71 @@
                             </thead>
                         </table>
                     </div>
-
                     <div class="table100-body js-pscroll">
                         <table>
                             <tbody>
+                            <?php
+                            include '../DBConnect.php';
+                            global $db;
+                            $sql = "SELECT * FROM package";
+                            $result = $db->query($sql) or trigger_error($db->error."[$sql]");
+                            while($row = mysqli_fetch_array($result)){
+
+                            $name = $row['PackageName'];
+                            $id = $row['PackageID'];
+                            $price = $row['PackagePrice'];
+                            $details = $row['PackageDetails'];
+                            ?>
                             <tr class="row100 body">
-                                <td class="cell100 column1">Like a butterfly</td>
-                                <td class="cell100 column2">Boxing</td>
-                                <td class="cell100 column3">9:00 AM - 11:00 AM</td>
-                                <td class="cell100 column4"><i class="material-icons button edit">edit</i></td>
+                                <td class="cell100 column1"><?php echo $name; ?></td>
+                                <td class="cell100 column2"><?php echo $price; ?></td>
+                                <td class="cell100 column3"><?php echo $details; ?></td>
+                                <td class="cell100 column4"><i class="material-icons button edit" data-toggle="modal" data-target="#myModal">edit</i></td>
                                 <td class="cell100 column5"><i class="material-icons button delete">delete</i></td>
                             </tr>
 
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Mind & Body</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">8:00 AM - 9:00 AM</td>
-                                <td class="cell100 column4">Adam Stewart</td>
-                                <td class="cell100 column5">15</td>
-                            </tr>
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Like a butterfly</td>
-                                <td class="cell100 column2">Boxing</td>
-                                <td class="cell100 column3">9:00 AM - 11:00 AM</td>
-                                <td class="cell100 column4">Aaron Chapman</td>
-                                <td class="cell100 column5">10</td>
-                            </tr>
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
 
-                            <tr class="row100 body">
-                                <td class="cell100 column1">Mind & Body</td>
-                                <td class="cell100 column2">Yoga</td>
-                                <td class="cell100 column3">8:00 AM - 9:00 AM</td>
-                                <td class="cell100 column4">Adam Stewart</td>
-                                <td class="cell100 column5">15</td>
-                            </tr>
+                                        <div class="modal-body">
+                                            <section>
+                                                <div class="container1" >
+                                                    <div class="picture-holder"></div>
+                                                    <div class="story-holder">
+                                                        <h1 class="formh1">Package</h1><br><br><br>
+                                                        <form method="post" action="ACTIONS/EditPackage.php" >
+                                                            <label>
+                                                                <span>Package Name</span><br>
+                                                                <input type="text" name="name" required value="<?php echo $name; ?>"/>
+                                                            </label><br>
+                                                            <label>
+                                                                <span>Package Price</span><br>
+                                                                <input type="text" name="price" required value="<?php echo $price; ?>"/>
+                                                            </label><br>
+                                                            <label>
+                                                                <span>Package Details</span><br>
+                                                                <textarea type="text" name="details" required rows="4" cols="20"><?php echo $details; ?></textarea>
+                                                            </label>
+                                                            <input type="hidden" name="id" value=" <?php echo $id; ?>">
+                                                            <br><br>
+                                                            <div class="text-center">
+                                                                <button type="submit" class="buttonsubmit">Edit Package</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                            <?php }?>
+
                             </tbody>
                         </table>
                     </div>
@@ -138,6 +182,7 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 </script>
-
+<script type='text/javascript' src='../JS/jquery-3.2.1.min.js'></script>
+<script type='text/javascript' src='../BOOTSTRAP/bootstrap.min.js'></script>
 </body>
 </html>

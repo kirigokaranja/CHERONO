@@ -14069,7 +14069,7 @@ widget_pages
 
 .plan-price {
     font-family: "Lusitana", serif;
-    font-size: 70px;
+    font-size: 50px;
     line-height: 0.9;
     margin: 0;
 }
@@ -14087,7 +14087,7 @@ widget_pages
 
 @media (min-width: 992px) {
     .plan-name h3 {
-        font-size: 45px;
+        font-size: 35px;
     }
 }
 

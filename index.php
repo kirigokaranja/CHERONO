@@ -177,25 +177,36 @@
                     <div class="row">
 
                         <!--echo $icon_options['custom_classes'];-->
+                        <?php
+                        include 'DBConnect.php';
+                        global $db;
+                        $sql = "SELECT * FROM package";
+                        $result = $db->query($sql) or trigger_error($db->error."[$sql]");
+                        while($row = mysqli_fetch_array($result)){
 
+                        $name = $row['PackageName'];
+                        $id = $row['PackageID'];
+                        $price = $row['PackagePrice'];
+                        $details = $row['PackageDetails'];
+                        $dets = explode("," , $details);
+                        $sze = sizeof($dets);
+                        ?>
 
                         <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
                             <ul class="price-table with_background with_shadow">
                                 <li class="plan-name">
-                                    <h3 class="highlight4">PhotoShoot Package</h3>
+                                    <h3 class="highlight4"><?php echo $name; ?></h3>
                                 </li>
                                 <li class="features-list">
                                     <ul class="bold grey">
-                                        <li class="default">
-                                            Basic Special Effects			</li>
-                                        <li class="default">
-                                            Zombie			</li>
-                                        <li class="default">
-                                            Injury Simulation			</li>
-                                        <li class="default">
-                                            Fantasy			</li>
-                                        <li class="default">
-                                            Theatre			</li>
+                                        <?php for ($i = 0; $i < $sze; ++$i) {
+                                            ?>
+                                            <li class="default">
+                                                <?php echo $dets[$i]; ?>
+                                            </li>
+                                            <?php
+                                        }
+                                        ?>
                                     </ul>
                                 </li>
                                 <li class="call-to-action">
@@ -205,8 +216,8 @@
                                             <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/still-life_3.png" alt="">
                                             <div class="item-content">
                                                 <p class="plan-price highlight4">
-                                                    <span>$</span>
-                                                    <span>150</span>
+                                                    <span>Ksh</span>
+                                                    <span><?php echo $price; ?></span>
                                                 </p>
                                                 <div class="content-body">
                                                     <p class="small-text grey">most popular</p>
@@ -231,64 +242,7 @@
                         </div>
 
 
-
-                        <!--echo $icon_options['custom_classes'];-->
-
-
-                        <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
-                            <ul class="price-table with_background with_shadow">
-                                <li class="plan-name">
-                                    <h3 class="highlight2">Graduation Package</h3>
-                                </li>
-                                <li class="features-list">
-                                    <ul class="bold grey">
-                                        <li class="default">
-                                            Natural			</li>
-                                        <li class="default">
-                                            Basic Beauty			</li>
-                                        <li class="default">
-                                            Formal			</li>
-                                        <li class="default">
-                                            Glamour			</li>
-                                        <li class="default">
-                                            Contour			</li>
-                                    </ul>
-                                </li>
-                                <li class="call-to-action">
-
-                                    <div class="theme_bg">
-                                        <div class="vertical-item hover-content bg_teaser with_border">
-                                            <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/still-life_2.png" alt="">
-                                            <div class="item-content">
-                                                <p class="plan-price highlight2">
-                                                    <span>$</span>
-                                                    <span>199</span>
-                                                </p>
-                                                <div class="content-body">
-                                                    <p class="small-text grey">most popular</p>
-                                                    <a href="#" target="_self"
-                                                       class="theme_button color2 ">
-                                                        <span>book now</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bg_overlay color_bg_2"></div>
-
-                                    <div class="media_cover">
-                                        <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/texture_2.png" alt="">
-                                    </div>
-
-                                    <div class="top_shadow"></div>
-                                </li>
-                            </ul>
-                        </div>
-
-
-
-                        <!--echo $icon_options['custom_classes'];-->
+<?php } ?>
 
 
                         <div class="col-md-4 col-sm-6 col-xs-12 col-sm-push-3 col-md-push-0 to_animate" data-animation="fadeInUp">
@@ -342,56 +296,6 @@
                             </ul>
                         </div>
 
-                        <div class="col-xs-12 col-sm-6 col-md-4 to_animate" data-animation="fadeInUp">
-                            <ul class="price-table with_background with_shadow">
-                                <li class="plan-name">
-                                    <h3 class="highlight4">TV Package</h3>
-                                </li>
-                                <li class="features-list">
-                                    <ul class="bold grey">
-                                        <li class="default">
-                                            Basic Special Effects			</li>
-                                        <li class="default">
-                                            Zombie			</li>
-                                        <li class="default">
-                                            Injury Simulation			</li>
-                                        <li class="default">
-                                            Fantasy			</li>
-                                        <li class="default">
-                                            Theatre			</li>
-                                    </ul>
-                                </li>
-                                <li class="call-to-action">
-
-                                    <div class="theme_bg">
-                                        <div class="vertical-item hover-content bg_teaser with_border">
-                                            <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/still-life_3.png" alt="">
-                                            <div class="item-content">
-                                                <p class="plan-price highlight4">
-                                                    <span>$</span>
-                                                    <span>150</span>
-                                                </p>
-                                                <div class="content-body">
-                                                    <p class="small-text grey">most popular</p>
-                                                    <a href="#" target="_self"
-                                                       class="theme_button color4 ">
-                                                        <span>book now</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="bg_overlay color_bg_4"></div>
-
-                                    <div class="media_cover">
-                                        <img src="//webdesign-finder.com/makeup/wp-content/uploads/2017/08/texture_1.png" alt="">
-                                    </div>
-
-                                    <div class="top_shadow"></div>
-                                </li>
-                            </ul>
-                        </div>
 
                     </div>
                 </div>
@@ -399,7 +303,24 @@
 
         </div>
 
-    </div><!-- eof #canvas -->
+    </div>
+    <section class="ls page_copyright section_padding_top_30 section_padding_bottom_30 table_section table_section_md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-4 text-center">
+                    <img src="logo.png">
+                </div>
+                <div class="col-sm-6 col-md-4 col-md-pull-4 text-center">
+                    <p class="small-text">
+                        makeup artist                </p>
+                </div>
+                <div class="col-sm-6 col-md-4 text-center">
+                    <p class="small-text">
+                        &copy; 2018 Stephanie                </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script type='text/javascript' src='http://webdesign-finder.com/makeup/wp-content/themes/makeup/js/compressed.js?ver=1.0.2'></script>
     <script type='text/javascript' src='http://webdesign-finder.com/makeup/wp-content/themes/makeup/js/plugins.js?ver=1.0.2'></script>
     <script type='text/javascript' src='http://webdesign-finder.com/makeup/wp-content/themes/makeup/js/main.js?ver=1.0.2'></script>
