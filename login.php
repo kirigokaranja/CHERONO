@@ -35,7 +35,7 @@
 					</span>
             </div>
 
-            <form class="login100-form validate-form" action="book.php">
+            <form class="login100-form validate-form" action="login_action.php" method="post">
                 <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
                     <span class="label-input100">Email</span>
                     <input class="input100" type="email" name="username" placeholder="Enter EmailAddress">
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="container-login100-form-btn" style="margin-left: 20%" >
-                    <button class="login100-form-btn" onclick="window.location.href= 'book.php' ">
+                    <button class="login100-form-btn" name="login">
                         Login
                     </button>
 
