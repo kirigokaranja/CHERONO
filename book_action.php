@@ -1,0 +1,18 @@
+<?php
+include ("DBConnect.php");
+
+$date = $_POST["date"];
+$location = $_POST["location"];
+$package = $_POST["package"];
+$description = $_POST["description"];
+$custid = $_POST["custid"];
+$status = "pending";
+
+$sql2="INSERT INTO `book`(`customerID`, `packageID`, `date`, `location`, `description`, `status`) 
+   VALUES ('$custid', '$package', '$date', '$location', '$description', '$status')";
+$result1 = mysqli_query($db,$sql2);
+if ($result1){
+    header("Location: book.php?message=success");
+}else{
+    header("Location: book.php?message=error");
+}

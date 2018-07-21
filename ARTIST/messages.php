@@ -90,26 +90,23 @@ if(strpos($url,'message=error')){
                             $name = $row['name'];
                             $email = $row['email'];
                             $phone = $row['phone'];
+                            $st = $row['status'];
 
-//                            if ($result = " "){
-//                                ?>
-<!--                                <tr class="row100 body">-->
-<!--                                    <td colspan="5" class="cell100 column1">No Message received yet.</td>-->
-<!--                                   </tr>-->
-<!--                            --><?php
-//                            }else{
+
                             ?>
                             <tr class="row100 body">
                                 <td class="cell100 column1"><?php echo $date; ?></td>
                                 <td class="cell100 column2"><?php echo $name; ?></td>
                                 <td class="cell100 column3"><?php echo $email; ?></td>
                                 <td class="cell100 column4"><?php echo $phone; ?></td>
-                                <td class="cell100 column5"><a href="ACTIONS/readMessage.php?id=<?php echo $id;?>"> <i class="material-icons button reply">reply</i></a></td>
+                                <td class="cell100 column5"><a href="ACTIONS/readMessage.php?id=<?php echo $id; ?>"> <i
+                                                class="material-icons button reply">reply</i></a></td>
                             </tr>
 
 
                     </div>
                     <?php
+
                             }?>
 
                     </tbody>

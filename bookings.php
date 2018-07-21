@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="CSS/top_part.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/navbar.css" type="text/css">
+    <link rel="stylesheet" href="CSS/tables.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -25,13 +29,102 @@
 
 </div>
 
-<div >
-    Scroll Up and Down this page to see the parallax scrolling effect.
-    This div is just here to enable scrolling.
-    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div style="margin-top: 8%">
+    <?php
+    //get the url
+    $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+    //checking string position
+    if(strpos($url,'message=error')){
+        echo "<div class=\"alert alert-danger\" style='width: 25%;margin-left: 35%;margin-top: -4%'> Booking not changed.</div>";
+    }else if (strpos($url,'message=success')) {
+        echo "<div class=\"alert alert-success\" style='width: 25%;margin-left: 35%;margin-top: -4%'><strong>Success!</strong> Booking edit Successful.</div>";
+    }
+
+    ?><br>
+    <div class="limiter">
+        <div class="container-table100">
+
+            <div class="wrap-table100">
+                <div class="table100 ver1 m-b-110">
+                    <div class="table100-head">
+                        <table>
+                            <thead>
+                            <tr class="row100 head">
+                                <th class="cell100 column1">Book Date</th>
+                                <th class="cell100 column2">Location</th>
+                                <th class="cell100 column3">Package</th>
+                                <th class="cell100 column4">Description</th>
+                                <th class="cell100 column5"></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table100-body js-pscroll">
+                        <table>
+                            <tbody>
+                            <?php
+                            include 'DBConnect.php';
+                            global $db;
+                            $status = "pending";
+                            $cid = '1';
+                            $sql = "SELECT * FROM book WHERE status = '$status' and customerID = '$cid' ORDER BY id ASC  ";
+                            $result = $db->query($sql) or trigger_error($db->error."[$sql]");
+                            while($row = mysqli_fetch_array($result)){
+
+                            $date = $row['date'];
+                            $location = $row['location'];
+                            $description = $row['description'];
+                            $package = $row['packageID'];
+                            $pid = $row['id'];
+                            $sts = $row['status'];
+
+
+                            ?>
+                            <tr class="row100 body">
+                                <td class="cell100 column1"><?php echo $date; ?></td>
+                                <td class="cell100 column2"><?php echo $location; ?></td>
+                                <td class="cell100 column3"><?php echo $package; ?></td>
+                                <td class="cell100 column4"><?php echo $description; ?></td>
+                                <td class="cell100 column5">
+
+                                    <?php
+                                    if ($sts == $status){
+                                        ?>
+                                        <form action="view_bookings.php" method="post">
+                                            <input type="hidden" value="<?php echo $pid;?>" name="id">
+                                            <input type="hidden" value="edit" name="state">
+                                            <button type="submit" class="submit" style="border: none;background-color: transparent"><i class="material-icons ">edit</i></button>
+                                        </form>
+                                        <?php
+                                    }else{
+                                        ?>
+                                        <form action="view_bookings.php" method="post">
+                                            <input type="hidden" value="<?php echo $id;?>" name="id">
+                                            <input type="hidden" value="view" name="state">
+                                            <button type="submit" class="submit" style="border: none;background-color: transparent"><i class="material-icons">check_circle</i></button>
+                                        </form>
+                                        <?php
+                                    }
+                                    ?>
+
+                                </td>
+                            </tr>
+
+
+                    </div>
+                    <?php
+
+                    }?>
+
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
-
-
 
 </body>
 </html>
