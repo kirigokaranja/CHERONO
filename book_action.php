@@ -1,5 +1,10 @@
 <?php
+session_start();
 include ("DBConnect.php");
+
+if(isset($_SESSION['email'])){
+
+
 
 $date = $_POST["date"];
 $location = $_POST["location"];
@@ -16,3 +21,11 @@ if ($result1){
 }else{
     header("Location: book.php?message=error");
 }
+ }else{
+    ?>
+    <script type="text/javascript">
+        window.location.href = 'login.php';
+    </script>
+    <?php
+}
+?>

@@ -19,6 +19,7 @@
 <?php
 include '../DBConnect.php';
 global $db;
+if(isset($_SESSION['email'])){
 $st = "replied";
 $messages="SELECT * FROM `messages` WHERE status = '$st'";
 $result_message=mysqli_query($db,$messages);
@@ -122,5 +123,13 @@ if(strpos($url,'message=error')){
 
 <script type='text/javascript' src='../JS/jquery-3.2.1.min.js'></script>
 <script type='text/javascript' src='../BOOTSTRAP/bootstrap.min.js'></script>
+<?php }else{
+?>
+    <script type="text/javascript">
+        window.location.href = '../login.php';
+    </script>
+    <?php
+}
+?>
 </body>
 </html>

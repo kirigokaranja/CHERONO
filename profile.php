@@ -11,6 +11,31 @@
 
 </head>
 <body>
+<?php
+session_start();
+include ("DBConnect.php");
+
+if(isset($_SESSION['email'])){
+    $em = $_SESSION['email'];
+
+    $sq = "SELECT * FROM customer where Email = '$em'";
+    $res = $db->query($sq) or trigger_error($db->error."[$sq]");
+while($row2 = mysqli_fetch_array($res)) {
+    $id = $row2['CustomerID'];
+
+    $file = "IMAGES/PROFILE/";
+
+    $sql3="SELECT * FROM `customer` WHERE `CustomerID`='$id'";
+    $data=mysqli_query($db,$sql3);
+while($fetch=mysqli_fetch_assoc($data)){
+    $fname=$fetch['FirstName'];
+    $lname=$fetch['LastName'];
+    $email=$fetch['Email'];
+    $phone=$fetch['PhoneNumber'];
+    $imgname = $fetch['Image'];
+    $img = $file . $fetch['Image'];
+
+    ?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
@@ -21,22 +46,7 @@
     <a  href="index.php" style="text-decoration:none">Home</a>
 </nav>
 
-<?php
-include('DBConnect.php');
-    $id = 1;
-$file = "IMAGES/PROFILE/";
 
-$sql3="SELECT * FROM `customer` WHERE `CustomerID`='$id'";
-$data=mysqli_query($db,$sql3);
-while($fetch=mysqli_fetch_assoc($data)){
-    $fname=$fetch['FirstName'];
-    $lname=$fetch['LastName'];
-    $email=$fetch['Email'];
-    $phone=$fetch['PhoneNumber'];
-    $imgname = $fetch['Image'];
-    $img = $file . $fetch['Image'];
-
-?>
 <?php
 //get the url
 $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
@@ -81,18 +91,18 @@ if(isset($_POST['submit'])) {
     $id = 1;
 
     $upload_images = $_FILES['myimage']['name'];
-    move_uploaded_file($_FILES['myimage']['tmp_name'], "$folder".$_FILES["myimage"]["name"]);
+    move_uploaded_file($_FILES['myimage']['tmp_name'], "$folder" . $_FILES["myimage"]["name"]);
 
     echo $upload_images;
     $sql = "UPDATE `customer` SET `FirstName`='$fname',`LastName`='$lname',`PhoneNumber`='$phone',`Image`='$upload_images'
             WHERE `CustomerID`='$id'";
-    $result = mysqli_query($db,$sql);
-    if ($result){
+    $result = mysqli_query($db, $sql);
+    if ($result) {
         header("Location: profile.php?message=success");
-    }else{
+    } else {
         header("Location: profile.php?message=error");
     }
-
+}
 }
 ?>
 
@@ -109,5 +119,13 @@ if(isset($_POST['submit'])) {
         reader.readAsDataURL(event.target.files[0]);
     }
 </script>
+<?php }else{
+?>
+<script type="text/javascript">
+    window.location.href = 'login.php';
+</script>
+<?php
+}
+?>
 </body>
 </html>

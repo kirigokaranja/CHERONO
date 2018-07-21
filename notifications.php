@@ -9,6 +9,13 @@
 
 </head>
 <body>
+<?php
+session_start();
+include ("DBConnect.php");
+
+if(isset($_SESSION['email'])){
+    $id = $_SESSION['email'];
+?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
@@ -32,6 +39,13 @@
 </div>
 
 
-
+<?php }else{
+?>
+<script type="text/javascript">
+    window.location.href = 'login.php';
+</script>
+<?php
+}
+?>
 </body>
 </html>

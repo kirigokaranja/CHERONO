@@ -20,12 +20,27 @@
 <body class="home page-template page-template-page-templates page-template-full-width page-template-page-templatesfull-width-php page page-id-6 masthead-fixed full-width grid">
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
+    <?php
+    session_start();
+    include ("DBConnect.php");
+    if(isset($_SESSION['email'])){
+    $id = $_SESSION['email'];
+    ?>
+    <a href="logout.php"><button class="loginBtn">Logout</button></a>
+    <a href="bookings.php" style="text-decoration:none">Bookings</a>
+    <a href="notifications.php" style="text-decoration:none" class="active">Notifications</a>
+    <a href="profile.php" style="text-decoration:none">Profile</a>
+    <a href="book.php" style="text-decoration:none" >Book</a>
+        <?php
+    }else{
+    ?>
     <a href="login.php"><button class="loginBtn">Login</button></a>
     <a href="contact.php" style="text-decoration:none">contact</a>
     <a href="#services" style="text-decoration:none">services</a>
     <a href="#works" style="text-decoration:none">works</a>
     <a href="#about_me" style="text-decoration:none">about me</a>
     <a class="active" href="index.php" style="text-decoration:none">Home</a>
+    <?php } ?>
 </nav>
 
 

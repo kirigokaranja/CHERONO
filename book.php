@@ -38,6 +38,26 @@
     </style>
 </head>
 <body>
+<?php
+
+session_start();
+include ("DBConnect.php");
+
+if(isset($_SESSION['email'])){
+    $id = $_SESSION['email'];
+
+    $s = "SELECT * FROM customer WHERE Email = '$id'";
+    global $db;
+    $res = $db->query($s) or trigger_error($db->error."[$s]");
+
+
+    while($row = mysqli_fetch_array($res)) {
+        $fname = $row['FirstName'];
+        $sname = $row['LastName'];
+        $custid = $row['CustomerID'];
+
+
+        ?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
@@ -47,25 +67,7 @@
     <a href="book.php" style="text-decoration:none" class="active">Book</a>
     <a  href="index.php" style="text-decoration:none">Home</a>
 </nav>
-<?php
 
-session_start();
-include ("DBConnect.php");
-
-$id = "kirigokaranja@gmail.com";
-
-$s = "SELECT * FROM customer WHERE Email = '$id'";
-global $db;
-$res = $db->query($s) or trigger_error($db->error."[$s]");
-
-
-while($row = mysqli_fetch_array($res)) {
-$fname = $row['FirstName'];
-$sname = $row['LastName'];
-$custid = $row['CustomerID'];
-
-
-?>
 <div id="main-wrapper">
 
     <div class="container-fluid">
@@ -148,5 +150,13 @@ $custid = $row['CustomerID'];
         </div>
     </div>
 </div>
+<?php }else{
+?>
+    <script type="text/javascript">
+        window.location.href = 'login.php';
+    </script>
+    <?php
+}
+?>
 </body>
 </html>

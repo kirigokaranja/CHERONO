@@ -10,6 +10,26 @@
 
 </head>
 <body>
+<?php
+session_start();
+include 'DBConnect.php';
+global $db;
+if(isset($_SESSION['email'])){
+
+
+    $status = $_POST['state'];
+    $id = $_POST['id'];
+    $sql = "SELECT * FROM book WHERE id = '$id'";
+    $result = $db->query($sql) or trigger_error($db->error."[$sql]");
+while($row = mysqli_fetch_array($result)) {
+
+    $date = $row['date'];
+    $location = $row['location'];
+    $description = $row['description'];
+    $package = $row['packageID'];
+    $sts = $row['status'];
+
+    ?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
@@ -19,22 +39,7 @@
     <a href="book.php" style="text-decoration:none" >Book</a>
     <a  href="index.php" style="text-decoration:none">Home</a>
 </nav>
-<?php
-include 'DBConnect.php';
-global $db;
-$status = $_POST['state'];
-$id = $_POST['id'];
-$sql = "SELECT * FROM book WHERE id = '$id'";
-$result = $db->query($sql) or trigger_error($db->error."[$sql]");
-while($row = mysqli_fetch_array($result)) {
 
-    $date = $row['date'];
-    $location = $row['location'];
-    $description = $row['description'];
-    $package = $row['packageID'];
-    $sts = $row['status'];
-
-   ?>
         <section>
             <div class="container1" >
                 <div class="picture-holder"></div>
@@ -80,6 +85,14 @@ while($row = mysqli_fetch_array($result)) {
             </div>
         </section>
 
+<?php
+}
+?>
+<?php }else{
+?>
+<script type="text/javascript">
+    window.location.href = 'login.php';
+</script>
 <?php
 }
 ?>

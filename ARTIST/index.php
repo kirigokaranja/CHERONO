@@ -15,6 +15,7 @@
 <?php
 include '../DBConnect.php';
 global $db;
+if(isset($_SESSION['email'])){
 $st = "unread";
 $messages="SELECT * FROM `messages` WHERE status = '$st'";
 $result_message=mysqli_query($db,$messages);
@@ -41,6 +42,13 @@ $count=mysqli_num_rows($result_message);
 
 
 
-
+<?php }else{
+?>
+    <script type="text/javascript">
+        window.location.href = '../login.php';
+    </script>
+    <?php
+}
+?>
 </body>
 </html>
