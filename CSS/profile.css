@@ -37,9 +37,12 @@
 }
 
 .avatar {
-    background: url("../IMAGES/marcus-lewis-612001-unsplash.jpg") no-repeat top center/cover;
+    background:  no-repeat top center/cover;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+}
+.avatar img{
+    height: 130%;
 }
 
 .info {
@@ -54,12 +57,37 @@
 .info h1 {
     padding: 12px 12px 0;
     width: 100%;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.info input{
+    width: 100%;
+    padding: 8px 15px;
+    box-sizing: border-box;
+    border: none;
+    color: #d02954;
+    border-bottom: 1px solid black;
+}
+.info input:focus{
+    border-bottom: solid 1px #d02954;
+}
+.info button{
+    background-color: #d02954;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 14px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: #333;
+    color: #d02954;
 
+}
 
 @media only screen and (min-width: 470px) {
     .profile {

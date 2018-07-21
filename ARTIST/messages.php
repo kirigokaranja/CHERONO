@@ -16,13 +16,23 @@
 
 </head>
 <body>
+<?php
+include '../DBConnect.php';
+global $db;
+$st = "replied";
+$messages="SELECT * FROM `messages` WHERE status = '$st'";
+$result_message=mysqli_query($db,$messages);
+$count=mysqli_num_rows($result_message);
+?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="../logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
     <a href="bookings.php" style="text-decoration:none">Bookings</a>
     <a href="packages.php" style="text-decoration:none" >packages</a>
     <a href="portfolio.php" style="text-decoration:none">portfolio</a>
-    <a href="messages.php" style="text-decoration:none" class="active">messages</a>
+    <a href="messages.php" style="text-decoration:none" class="active">messages <span class="new badge" style="background-color: #d02954"><?php if($count !== 0){
+                echo $count ;
+            }?></span></a>
     <a  href="index.php" style="text-decoration:none" >schedule</a>
 </nav>
 <div class="parallax" style=" background-image: url(../IMAGES/raphael-lovaski-532696-unsplash.jpg);">
@@ -69,8 +79,7 @@ if(strpos($url,'message=error')){
                         <table>
                             <tbody>
                             <?php
-                            include '../DBConnect.php';
-                            global $db;
+
                             $status = "unread";
                             $sql = "SELECT * FROM messages WHERE status = '$status' ORDER BY MessageDate DESC  ";
                             $result = $db->query($sql) or trigger_error($db->error."[$sql]");

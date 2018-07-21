@@ -8,12 +8,26 @@
      <title>Stephane | Login</title>
     <link rel="stylesheet" type="text/css" href="CSS/util.css">
     <link rel="stylesheet" type="text/css" href="CSS/login.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
 
 </head>
 <body>
 <div class="limiter">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
+
     <div class="container-login100">
+        <?php
+        //get the url
+        $url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+
+        //checking string position
+        if(strpos($url,'message=error')){
+            echo "<div class=\"alert alert-danger\" style='width: 25%;margin-left: 25%;margin-top: 5%'> An Error Occurred.</div>";
+        }else if (strpos($url,'message=success')) {
+            echo "<div class=\"alert alert-success\" style='width: 25%;margin-left: 25%;margin-top: 5%'><strong>Success!</strong> Registration Successfully.</div>";
+        }
+
+        ?>
         <div class="wrap-login100">
             <div class="login100-form-title" style="background-image: url(IMAGES/slide1.png);">
 					<span class="login100-form-title-1">
