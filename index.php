@@ -21,7 +21,7 @@
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="login.php"><button class="loginBtn">Login</button></a>
-    <a href="" style="text-decoration:none">contact</a>
+    <a href="contact.php" style="text-decoration:none">contact</a>
     <a href="#services" style="text-decoration:none">services</a>
     <a href="#works" style="text-decoration:none">works</a>
     <a href="#about_me" style="text-decoration:none">about me</a>

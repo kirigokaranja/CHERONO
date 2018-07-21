@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>StephaneAdmin | Packages</title>
+    <title>StephanieAdmin | Packages</title>
     <link rel="icon" type="image/ico" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="../CSS/top_part.css" type="text/css" rel="stylesheet">
