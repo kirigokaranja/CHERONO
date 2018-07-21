@@ -17,6 +17,7 @@
 </head>
 <body>
 <?php
+session_start();
 include '../DBConnect.php';
 global $db;
 if(isset($_SESSION['email'])){
