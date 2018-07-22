@@ -237,7 +237,7 @@
                                                 </p>
                                                 <div class="content-body">
                                                     <p class="small-text grey">most popular</p>
-                                                    <a href="#" target="_self"
+                                                    <a href="specific_book.php?id=<?php echo $id;?>" target="_self"
                                                        class="theme_button color4 ">
                                                         <span>book now</span>
                                                     </a>
