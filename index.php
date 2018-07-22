@@ -195,7 +195,8 @@
                         <?php
                         include 'DBConnect.php';
                         global $db;
-                        $sql = "SELECT * FROM package";
+                        $status = "active";
+                        $sql = "SELECT * FROM package where status = '$status'";
                         $result = $db->query($sql) or trigger_error($db->error."[$sql]");
                         while($row = mysqli_fetch_array($result)){
 
