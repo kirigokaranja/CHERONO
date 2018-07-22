@@ -68,10 +68,12 @@ if(strpos($url,'message=error')){
         <section class='info'>
             <h1><?php echo $email;?></h1>
             <form method="post" action="#" enctype="multipart/form-data">
-                <input type="file" name="myimage"  onchange="preview_image(event)" value="<?php echo $imgname?>"><br>
+                <input type="file" name="myimage"  onchange="preview_image(event)" ><br>
                 <label>First Name</label><input type="text" name="fname" value="<?php echo $fname?>"/><br><br>
                 <label>Last Name</label><input type="text" name="lname" value="<?php echo $lname?>"/><br><br>
                 <label>Phone Number</label><input type="text" name="phone" value="<?php echo $phone?>"/><br>
+                <input type="hidden" name="image" value="<?php echo $imgname?>">
+                <input type="hidden" name="id" value="<?php echo $id?>">
                 <button name="submit">Submit Changes</button>
             </form>
             <?php } ?>
@@ -88,20 +90,37 @@ if(isset($_POST['submit'])) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $phone = $_POST['phone'];
-    $id = 1;
+    $id = $_POST['id'];
+    $image = $_POST['image'];
 
     $upload_images = $_FILES['myimage']['name'];
     move_uploaded_file($_FILES['myimage']['tmp_name'], "$folder" . $_FILES["myimage"]["name"]);
 
-    echo $upload_images;
-    $sql = "UPDATE `customer` SET `FirstName`='$fname',`LastName`='$lname',`PhoneNumber`='$phone',`Image`='$upload_images'
-            WHERE `CustomerID`='$id'";
-    $result = mysqli_query($db, $sql);
-    if ($result) {
-        header("Location: profile.php?message=success");
-    } else {
-        header("Location: profile.php?message=error");
+
+
+    if ($upload_images == "" ){
+
+                $sql = "UPDATE `customer` SET `FirstName`='$fname',`LastName`='$lname',`PhoneNumber`='$phone',`Image`='$image'
+                    WHERE `CustomerID`='$id'";
+                    $result = mysqli_query($db, $sql);
+            if ($result) {
+                header("Location: profile.php?message=success");
+            } else {
+                header("Location: profile.php?message=error");
+            }
+
+    }else{
+
+                $sql = "UPDATE `customer` SET `FirstName`='$fname',`LastName`='$lname',`PhoneNumber`='$phone',`Image`='$upload_images'
+                    WHERE `CustomerID`='$id'";
+                $result = mysqli_query($db, $sql);
+                if ($result) {
+                    header("Location: profile.php?message=success");
+                } else {
+                    header("Location: profile.php?message=error");
+                }
     }
+
 }
 }
 ?>
