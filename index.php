@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Stephane | Home</title>
+    <title>Stephanie | Home</title>
     <link rel="icon" type="image/ico" href="favicon.ico" />
     <link rel='stylesheet' id='makeup-bootstrap-css'  href='CSS/bootstrap.min.css' type='text/css' media='all' />
     <link rel='stylesheet' id='makeup-animations-css'  href='CSS/animation.css' type='text/css' media='all' />
@@ -25,17 +25,35 @@
     include ("DBConnect.php");
     if(isset($_SESSION['email'])){
     $id = $_SESSION['email'];
+
+    $sq = "SELECT * FROM customer where Email = '$id'";
+    $res = $db->query($sq) or trigger_error($db->error."[$sq]");
+    while($row2 = mysqli_fetch_array($res)) {
+    $em = $row2['CustomerID'];
+
+    $pen = "pending";
+    $seen = "unseen";
+    $messages="SELECT * FROM `book` WHERE customerID = '$em' AND status != '$pen' AND seen = '$seen'";
+    $result_message=mysqli_query($db,$messages);
+    $count=mysqli_num_rows($result_message);}
     ?>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
-    <a href="bookings.php" style="text-decoration:none">Bookings</a>
-    <a href="notifications.php" style="text-decoration:none" class="active">Notifications</a>
-    <a href="profile.php" style="text-decoration:none">Profile</a>
-    <a href="book.php" style="text-decoration:none" >Book</a>
+        <a href="profile.php" style="text-decoration:none">Profile</a>
+        <a href="book.php" style="text-decoration:none" >Book</a>
+        <a href="contact.php" style="text-decoration:none">contact</a>
+        <a href="portfolio.php" style="text-decoration:none" >portfolio</a>
+        <a href="notifications.php" style="text-decoration:none" >Notifications
+            <span class="badge" id="spaner" style="background-color: #d02954;padding: 8px 10px;border-radius: 50%;color: white"><?php if($count !== 0){
+                    echo $count ;
+                }?></span></a>
+        <a class="active" href="index.php" style="text-decoration:none">Home</a>
+
         <?php
     }else{
     ?>
     <a href="login.php"><button class="loginBtn">Login</button></a>
     <a href="contact.php" style="text-decoration:none">contact</a>
+        <a href="portfolio.php" style="text-decoration:none">portfolio</a>
     <a href="#services" style="text-decoration:none">services</a>
     <a href="#works" style="text-decoration:none">works</a>
     <a href="#about_me" style="text-decoration:none">about me</a>

@@ -20,7 +20,7 @@ if(isset($_POST['login'])){
             $_SESSION['email'] = $custID;
             ?>
             <script type="text/javascript">
-                window.location.href = 'book.php';
+                window.location.href = 'index.php';
             </script>
             <?php
 

@@ -56,13 +56,20 @@ if(isset($_SESSION['email'])){
         $sname = $row['LastName'];
         $custid = $row['CustomerID'];
 
-
+    $pen = "pending";
+    $seen = "unseen";
+    $messages="SELECT * FROM `book` WHERE customerID = '$custid' AND status != '$pen' AND seen = '$seen'";
+    $result_message=mysqli_query($db,$messages);
+    $count=mysqli_num_rows($result_message);
         ?>
 <nav class="homenavbar">
     <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img src="logo.png"></a>
     <a href="logout.php"><button class="loginBtn">Logout</button></a>
     <a href="bookings.php" style="text-decoration:none">Bookings</a>
-    <a href="notifications.php" style="text-decoration:none" >Notifications</a>
+    <a href="notifications.php" style="text-decoration:none" >Notifications
+        <span class="badge" id="spaner" style="background-color: #d02954;padding: 8px 10px;border-radius: 50%;color: white"><?php if($count !== 0){
+                echo $count ;
+            }?></span></a>
     <a href="profile.php" style="text-decoration:none">Profile</a>
     <a href="book.php" style="text-decoration:none" class="active">Book</a>
     <a  href="index.php" style="text-decoration:none">Home</a>
@@ -111,7 +118,8 @@ if(isset($_SESSION['email'])){
                     <span class="input input--hoshi">
                     <input type="text" readonly style="border: none">
                         <?php
-                        $sql=mysqli_query($db, "SELECT * FROM package" );
+                        $status = "active";
+                        $sql=mysqli_query($db, "SELECT * FROM package where status = '$status'" );
                         if(mysqli_num_rows($sql)){
 
                         ?>

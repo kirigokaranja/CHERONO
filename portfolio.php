@@ -83,7 +83,7 @@
                                                          srcset="<?php echo $image; ?> 1170w, <?php echo $image; ?> 300w,
                                                           <?php echo $image; ?> 768w, <?php echo $image; ?> 1024w,
                                                            <?php echo $image; ?> 775w"
-                                                          sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                          sizes="(max-width: 1170px) 100vw, 1170px" />      </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -97,17 +97,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="<?php echo $image; ?>">
-                                                    <?php echo $details; ?>			</a>
+                                                    <?php echo $details; ?>         </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <?php } ?>
                                 <div class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 graduation ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/11-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -121,17 +121,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=landjaeger-salami-strip-steak-boudin-3">
-                                                    Landjaeger salami strip steak boudin			</a>
+                                                    Landjaeger salami strip steak boudin            </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 face ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/10-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -145,17 +145,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=short-ribs-jerky-ham-corned-beef-pork-2">
-                                                    Short ribs jerky ham corned beef pork			</a>
+                                                    Short ribs jerky ham corned beef pork           </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 hair ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/09-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -169,16 +169,16 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=tenderloin-filet-mignon-doner-strip-steak-2">
-                                                    Tenderloin filet mignon doner strip steak			</a>
+                                                    Tenderloin filet mignon doner strip steak           </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 photoshoot ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/08-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -192,17 +192,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=doner-alcatra-flank-burgdoggen-chicken">
-                                                    Doner alcatra flank burgdoggen chicken			</a>
+                                                    Doner alcatra flank burgdoggen chicken          </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 eye ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/07-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -216,17 +216,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=meatloaf-hamburger-tenderloin">
-                                                    Meatloaf hamburger tenderloin			</a>
+                                                    Meatloaf hamburger tenderloin           </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 hair ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/06-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -240,16 +240,16 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=tri-tip-tongue-kielbasa-rump-2">
-                                                    Tri-tip tongue kielbasa rump			</a>
+                                                    Tri-tip tongue kielbasa rump            </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 graduation ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/05-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -263,17 +263,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=landjaeger-salami-strip-steak-boudin-2">
-                                                    Landjaeger salami strip steak boudin			</a>
+                                                    Landjaeger salami strip steak boudin            </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 eye ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/04-1-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -287,16 +287,16 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=short-ribs-jerky-ham-corned-beef-pork">
-                                                    Short ribs jerky ham corned beef pork			</a>
+                                                    Short ribs jerky ham corned beef pork           </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 photoshoot ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/03-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -310,16 +310,16 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=tenderloin-filet-mignon-doner-strip-steak">
-                                                    Tenderloin filet mignon doner strip steak			</a>
+                                                    Tenderloin filet mignon doner strip steak           </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 graduation ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/01-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -333,17 +333,17 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=landjaeger-salami-strip-steak-boudin">
-                                                    Landjaeger salami strip steak boudin			</a>
+                                                    Landjaeger salami strip steak boudin            </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                                 <div
                                     class="isotope-item item-layout-item-regular col-lg-4 col-md-4 col-sm-6 col-xs-12 eye ">
                                     <div class="vertical-item gallery-item content-absolute text-center ds">
                                         <div class="item-media">
                                             <div class="item-media-wrap">
                                                 <div class="item-media entry-thumbnail post-thumbnail">
-                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />		</div> <!-- .item-media -->
+                                                    <img width="1170" height="780" src="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2.jpg" class="attachment- size- wp-post-image" alt="" srcset="http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2.jpg 1170w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-300x200.jpg 300w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-768x512.jpg 768w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-1024x683.jpg 1024w, http://webdesign-finder.com/makeup/wp-content/uploads/2017/08/02-2-775x517.jpg 775w" sizes="(max-width: 1170px) 100vw, 1170px" />     </div> <!-- .item-media -->
                                             </div> <!-- .item-media-wrap -->
 
                                             <div class="media-links">
@@ -357,12 +357,12 @@
                                         <div class="item-content">
                                             <h4 class="item-meta">
                                                 <a href="http://webdesign-finder.com/makeup/?fw-portfolio=tri-tip-tongue-kielbasa-rump">
-                                                    Tri-tip tongue kielbasa rump			</a>
+                                                    Tri-tip tongue kielbasa rump            </a>
                                             </h4>
                                         </div>
-                                    </div>			</div>
+                                    </div>          </div>
                             </div><!-- eof .isotope_container -->
-                        </div><!-- eof .columns_padding_* -->			</div><!--eof #content -->
+                        </div><!-- eof .columns_padding_* -->           </div><!--eof #content -->
 
                 </div><!-- eof .row-->
             </div><!-- eof .container -->

@@ -25,6 +25,12 @@ $res = $db->query($sq) or trigger_error($db->error."[$sq]");
 while($row2 = mysqli_fetch_array($res)) {
     $cid = $row2['CustomerID'];
 
+    $pen = "pending";
+    $seen = "unseen";
+    $messages="SELECT * FROM `book` WHERE customerID = '$cid' AND status != '$pen' AND seen = '$seen'";
+    $result_message=mysqli_query($db,$messages);
+    $count=mysqli_num_rows($result_message);
+
     ?>
     <nav class="homenavbar">
         <a href="index.php" style="float: left; padding-top: 0; margin-left: 140px;text-decoration: none"><img
@@ -33,7 +39,10 @@ while($row2 = mysqli_fetch_array($res)) {
             <button class="loginBtn">Logout</button>
         </a>
         <a href="bookings.php" style="text-decoration:none" class="active">Bookings</a>
-        <a href="notifications.php" style="text-decoration:none">Notifications</a>
+        <a href="notifications.php" style="text-decoration:none">Notifications
+            <span class="badge" id="spaner" style="background-color: #d02954;padding: 8px 10px;border-radius: 50%;color: white"><?php if($count !== 0){
+                    echo $count ;
+                }?></span></a>
         <a href="profile.php" style="text-decoration:none">Profile</a>
         <a href="book.php" style="text-decoration:none">Book</a>
         <a href="index.php" style="text-decoration:none">Home</a>
