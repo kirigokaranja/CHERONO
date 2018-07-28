@@ -28,6 +28,7 @@ while($row = mysqli_fetch_array($result)) {
     $description = $row['description'];
     $package = $row['packageID'];
     $sts = $row['status'];
+    $time = $row['time'];
 
     ?>
 <nav class="homenavbar">
@@ -52,18 +53,29 @@ while($row = mysqli_fetch_array($result)) {
                             <input type="text" name="date" required value="<?php echo $date;?>"/>
                         </label><br>
                         <label>
+                            <span>Book Time</span><br>
+                            <select name="time"  class="input__field input__field--hoshi" id="time"  required style="font-size:large; outline:none">
+                                <option value="<?php echo $time;?>"><?php echo $time;?></option>
+                                <option value="08:00-10:00">08:00 - 10:00</option>
+                                <option value="11:00-13:00">11:00 - 13:00</option>
+                                <option value="14:00-16:00">14:00 - 16:00</option>
+                                <option value="18:00-20:00">18:00 - 20:00</option>
+                            </select>
+                        </label><br>
+                        <label>
                             <span>Book Location</span><br>
                             <input type="text" name="location" required value="<?php echo $location;?>"/>
                         </label><br>
                         <label>
                             <span>Book Package</span><br>
                             <?php
-                            $sql=mysqli_query($db, "SELECT * FROM package" );
+                            $status = "active";
+                            $sql=mysqli_query($db, "SELECT * FROM package where status = '$status'" );
                             if(mysqli_num_rows($sql)){
 
                                 ?>
                                 <select name="package"  class="input__field input__field--hoshi" id="package"  required style="font-size:large;color: #82ee7e; border:none">
-                                    <option value="choose"><?php echo $package;?></option>
+                                    <option value="<?php echo $package;?>"><?php echo $package;?></option>
                                     <?php
                                     while($rs=mysqli_fetch_array($sql)){
                                     ?>

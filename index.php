@@ -151,7 +151,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight2links">
-                                                <a href="services.php">more info</a>
+<!--                                                <a href="services.php">more info</a>-->
                                             </footer>
 
                                         </div><!-- eof .teaser -->
@@ -173,7 +173,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight3links">
-                                                <a href="services.php">more info</a>
+<!--                                                <a href="services.php">more info</a>-->
                                             </footer>
 
                                         </div><!-- eof .teaser -->
@@ -195,7 +195,7 @@
                                                 </div>
                                             </div>
                                             <footer class="small-text highlight4links">
-                                                <a href="http://webdesign-finder.com/makeup/?fw-services=eye-makeup">more info</a>
+<!--                                                <a href="http://webdesign-finder.com/makeup/?fw-services=eye-makeup">more info</a>-->
                                             </footer>
 
                                         </div>

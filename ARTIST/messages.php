@@ -21,7 +21,7 @@ session_start();
 include '../DBConnect.php';
 global $db;
 if(isset($_SESSION['email'])){
-$st = "replied";
+$st = "unread";
 $messages="SELECT * FROM `messages` WHERE status = '$st'";
 $result_message=mysqli_query($db,$messages);
 $count=mysqli_num_rows($result_message);

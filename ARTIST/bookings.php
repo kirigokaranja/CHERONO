@@ -66,6 +66,7 @@ $count=mysqli_num_rows($result_message);
                             <thead>
                             <tr class="row100 head">
                                 <th class="cell100 column1">Book Date</th>
+                                <th class="cell100 column2">Book Time</th>
                                 <th class="cell100 column2">Location</th>
                                 <th class="cell100 column3">Package</th>
                                 <th class="cell100 column4">Description</th>
@@ -92,11 +93,13 @@ $count=mysqli_num_rows($result_message);
                             $package = $row['packageID'];
                             $pid = $row['id'];
                             $sts = $row['status'];
+                            $time = $row['time'];
 
 
                             ?>
                             <tr class="row100 body">
                                 <td class="cell100 column1"><?php echo $date; ?></td>
+                                <td class="cell100 column2"><?php echo $time; ?></td>
                                 <td class="cell100 column2"><?php echo $location; ?></td>
                                 <td class="cell100 column3"><?php echo $package; ?></td>
                                 <td class="cell100 column4"><?php echo $description; ?></td>

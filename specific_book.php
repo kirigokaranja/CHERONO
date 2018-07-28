@@ -111,6 +111,19 @@ while($row = mysqli_fetch_array($res)) {
 </span>
     <span class="input input--hoshi">
                     <input type="text" readonly style="border: none">
+            <select name="time"  class="input__field input__field--hoshi" id="time"  required style="font-size:large; outline:none">
+                        <option value="choose">Choose desired time</option>
+                <option value="08:00-10:00">08:00 - 10:00</option>
+                 <option value="11:00-13:00">11:00 - 13:00</option>
+                 <option value="14:00-16:00">14:00 - 16:00</option>
+                 <option value="18:00-20:00">18:00 - 20:00</option>
+            </select>
+        <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="time" >
+            <span class="input__label-content input__label-content--hoshi">Time</span>
+          </label>
+        </span>
+    <span class="input input--hoshi">
+                    <input type="text" readonly style="border: none">
           <input class="input__field input__field--hoshi" type="text" id="location" name="location" required  />
           <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="location">
             <span class="input__label-content input__label-content--hoshi">Location</span>

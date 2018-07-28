@@ -26,11 +26,11 @@ body {
 }
 
 .homenavbar a:hover {
-    color: #800020;
+    color: #d02954;
 }
 
 .homenavbar a.active {
-    color: #800020;
+    color: #d02954;
 }
 .loginBtn{
     padding: 10px 25px;

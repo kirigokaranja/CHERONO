@@ -11,9 +11,10 @@ $location = $_POST["location"];
 $package = $_POST["package"];
 $description = $_POST["description"];
 $id = $_POST['id'];
+$time = $_POST['time'];
 
 
-$sql2="UPDATE `book` SET `packageID`= '$package',`date`= '$date',`location`= '$location',`description`='$description' WHERE `id` = '$id'";
+$sql2="UPDATE `book` SET `packageID`= '$package',`date`= '$date',`location`= '$location',`description`='$description', time = '$time' WHERE `id` = '$id'";
 $result1 = mysqli_query($db,$sql2);
 
 echo $sql2;

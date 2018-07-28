@@ -42,6 +42,7 @@ while($fetch=mysqli_fetch_assoc($data)){
     $date=$fetch['date'];
     $location=$fetch['location'];
     $description=$fetch['description'];
+    $time = $fetch['time'];
 }
 ?>
 <div>
@@ -56,6 +57,9 @@ while($fetch=mysqli_fetch_assoc($data)){
 
                         <div class="wrap-input100 validate-input" >
                             <label>Date</label> <input class="input100" type="text"  value="<?php echo $date;?>" readonly>
+                        </div>
+                        <div class="wrap-input100 validate-input" >
+                            <label>Time</label> <input class="input100" type="text"  value="<?php echo $time;?>" readonly>
                         </div>
 
                         <div class="wrap-input100 validate-input">
